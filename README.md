@@ -3,8 +3,8 @@
 A minecraft map generator. Note this is a generator in the very literal sense that it generates a map when you run it. It is not integrated with minecraft itself: it uses anvil-parser to write directly on the forge files. anvil-parser "by itself" is slowed down quite a bit due to security checks - some (very specific!) extensions to speed up the usage of it for this particular program are necessary. The program CANNOT RUN without some extensions to anvil-parser that are NOT in this repository, unless it is modified to do so.
 
 The map is entirely made of caves, obtained by combining a heightmap on top and one on the bottom. Both of these are defined as a product of:
-    -Low frequency simplex noise, controlling the "large-scale" terrain height
-    -A high frequency sine (left-)composed with very low frequency simplex noise
+    * Low frequency simplex noise, controlling the "large-scale" terrain height
+    * A high frequency sine (left-)composed with very low frequency simplex noise
 
 The combined effect is summarized in this picture (by default, this is generated and shown before the map itself):
 
